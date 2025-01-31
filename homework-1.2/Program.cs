@@ -133,14 +133,15 @@
 //{
 //    Console.Write("Enter the number: ");
 //    int userNumber = int.Parse(Console.ReadLine());
-//    if (userNumber > max)
+//    array[i] = userNumber;
+//    if (array[i] > max)
 //    {
 //        max2 = max;
-//        max = userNumber;
+//        max = array[i];
 //    }
-//    else if (userNumber > max2 && userNumber < max)
+//    else if (array[i] > max2 && array[i] < max)
 //    {
-//        max2 = userNumber;
+//        max2 = array[i];
 //    }
 //}
 //if (max2 != max) Console.WriteLine($"The maximums are {max} and {max2}.");
