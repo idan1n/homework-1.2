@@ -128,23 +128,38 @@
 //Console.Write("Enter the number of digits: ");
 //int numberOfDigits = int.Parse(Console.ReadLine());
 //int[] array = new int[numberOfDigits];
-//int max = 0, max2 = 0;
-//for (int i = 0; i < numberOfDigits; i++)
+//Console.Write("Enter the number: ");
+//array[0] = int.Parse(Console.ReadLine());
+//int max = array[0], indexOfMax = 0;
+//int min = array[0], indexOfMin = 0;
+//for (int i = 1; i < numberOfDigits; i++)
 //{
 //    Console.Write("Enter the number: ");
 //    int userNumber = int.Parse(Console.ReadLine());
 //    array[i] = userNumber;
-//    if (array[i] > max)
+
+//    if (array[i] >= max)
 //    {
-//        max2 = max;
+//        indexOfMax = i;
 //        max = array[i];
 //    }
-//    else if (array[i] > max2 && array[i] < max)
+//    if (array[i] <= min)
+//    {
+//        indexOfMin = i;
+//        min = array[i];
+//    }
+//}
+//Console.Write($"The maximums are {max}");
+//int max2 = array[0];
+//if (max2 == max) max2 = array[1];
+//for (int i = 1; i < numberOfDigits; i++)
+//{
+//    if (array[i] != max && array[i] > max2)
 //    {
 //        max2 = array[i];
 //    }
 //}
-//if (max2 != max) Console.WriteLine($"The maximums are {max} and {max2}.");
+//Console.Write($" and {max2}");
 
 //8th task
 
